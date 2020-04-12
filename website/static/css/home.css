@@ -1,0 +1,125 @@
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    background-image: url('../img/puck.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+.header {
+    text-align: center;
+    margin: 60px;
+    margin-bottom: 20px;
+    font-size: 80px;
+    text-shadow: 0 0 15px #000;
+}
+
+.site-center {
+    display: flex;
+    width: 100%;
+}
+
+.email-form {
+    flex: 1.5;
+    text-align: center;
+    margin: 50px;
+    padding: 50px;
+    background: rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    max-width: 350px;
+}
+
+.buttons {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    margin: 10px;
+    margin-bottom: 25px;
+
+}
+
+.label {
+    text-align: left;
+}
+
+/* .input-box {
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    padding: 10px;
+} */
+
+.submit-btn, button {
+    color: white;
+    font-size: 17px;;
+    background: rgba(255, 0, 0, .7);
+    border-radius: 10px;
+    height: 40px;
+    display: flex;
+    margin: 10px;
+    width: 200px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.submit-btn:hover, button:hover {
+    background: rgba(255, 0, 0, .85);
+}
+
+.footnote {
+/*     position: absolute; */
+    width: 100%;
+    margin-bottom: 20px;
+/*     bottom: 0; */
+/*     padding: 20px; */
+    text-align: center;
+    font-size: 22px;
+    text-shadow: 0 0 15px #000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    border: none;
+    background: rgba(90, 90, 90, .6);
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.success {
+    color: rgb(0, 255, 0);
+}
+
+.error {
+    color: rgba(255, 70, 70);
+}

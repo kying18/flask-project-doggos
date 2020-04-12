@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Y Y Y</title>-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">
+<!--    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed|Quicksand" rel="stylesheet">-->
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="header">
+          Send your friend a good boi*
+      </div>
+      <div class="site-center">
+          <div class="email-form">
+              <form action="/send_email/" method="post">
+                  <div class="label">
+                      Your name:
+                  </div>
+                  <div class="input">
+                      <input type="text" name="name" class="input-box">
+                  </div>
+                  <div class="label">
+                      Recipient email:
+                  </div>
+                  <div class="input">
+                      <input type="text" name="email" class="input-box">
+                  </div>
+                  {% if success %}
+                    <div class="success">
+                      Success!
+                    </div>
+                  {% endif %}
+
+                  {% if error %}
+                    <div class="error">
+                      There was an error. Please try again.
+                    </div>
+                  {% endif %}
+                  <button type="submit" value="Send Email">Send</button>
+              </form>
+          </div>
+          <div class="buttons">
+              <div class="submit-btn" onclick="window.open('http://www.youtube.com');">
+                  Watch video
+              </div>
+              <div class="submit-btn" onclick="window.open('http://www.github.com');">
+                  Link to code
+              </div>
+              <div class="submit-btn" onclick="winow.open('http://www.youtube.com/y_cubed?sub_confirmation=1');">
+                  Subscribe
+              </div>
+          </div>
+      </div>
+      <div class="footnote">
+          *Approximately every 1 in 10 will be a dank meme ;)
+      </div>
+    </div>
+  </div>
+</body>
+</html>
